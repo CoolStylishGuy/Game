@@ -8,12 +8,12 @@ var mult = 1; //this is used to change the speed when tiptoe-ing is engaged.
 if keyboard_check(ord(tipbutton)) //checks to see if tiptoe button is being pressed
     {
     tiptoe = 1; //turns on tiptoe-ing
-    mult = -1/3;
+    mult = 1/3;
     }
 else
     {
     tiptoe = 0;
-    mult = -1;
+    mult = 1;
     }
 
 //The following block of code sets the direction the player faces and also has them move in the direction
