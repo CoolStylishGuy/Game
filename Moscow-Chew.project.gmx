@@ -13,8 +13,14 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_pcmove_init.gml</script>
-    <script>scripts\scr_player_movement.gml</script>
+    <scripts name="Movement">
+      <script>scripts\scr_pcmove_init.gml</script>
+      <script>scripts\scr_player_movement.gml</script>
+    </scripts>
+    <scripts name="Weapon Selector">
+      <script>scripts\scr_weapon_init_test.gml</script>
+      <script>scripts\scr_weapon_test.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
