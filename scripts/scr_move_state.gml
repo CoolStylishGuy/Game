@@ -1,5 +1,4 @@
 ///scr_move_state
-image_index = 0;
 scr_get_input();
 
 if (attack_key) {
@@ -27,6 +26,10 @@ vspd = lengthdir_y(len, dir);
 // Move
 x += hspd;
 y += vspd;
+
+// Control sprite
+image_speed = .2;
+if (len == 0) image_index = 0;
 
 // Vertical sprites
 if (vspd > 0) {
