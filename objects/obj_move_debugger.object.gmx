@@ -90,7 +90,7 @@
         <exetype>1</exetype>
         <functionname>action_draw_variable</functionname>
         <codestring></codestring>
-        <whoName>obj_pc_movetest</whoName>
+        <whoName>obj_player_place</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -146,13 +146,13 @@
         <exetype>1</exetype>
         <functionname>action_draw_variable</functionname>
         <codestring></codestring>
-        <whoName>obj_pc_movetest</whoName>
+        <whoName>obj_player_place</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>tiptoe</string>
+            <string>tiptoe_key</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -202,7 +202,7 @@
         <exetype>1</exetype>
         <functionname>action_draw_variable</functionname>
         <codestring></codestring>
-        <whoName>obj_pc_movetest</whoName>
+        <whoName>obj_player_place</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>

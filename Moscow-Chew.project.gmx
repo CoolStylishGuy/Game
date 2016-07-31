@@ -6,7 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_pcstand_place</sprite>
+    <sprites name="Place Holder Sprites">
+      <sprite>sprites\spr_down_place</sprite>
+      <sprite>sprites\spr_up_place</sprite>
+      <sprite>sprites\spr_left_place</sprite>
+      <sprite>sprites\spr_right_place</sprite>
+      <sprite>sprites\spr_down_attack_place</sprite>
+      <sprite>sprites\spr_up_attack_place</sprite>
+      <sprite>sprites\spr_left_attack_place</sprite>
+      <sprite>sprites\spr_right_attack_place</sprite>
+    </sprites>
     <sprites name="Player Sprite Concepts">
       <sprite>sprites\spr_player_left</sprite>
       <sprite>sprites\spr_player_down</sprite>
@@ -17,6 +26,7 @@
   <scripts name="scripts">
     <script>scripts\scr_get_input.gml</script>
     <script>scripts\scr_move_state.gml</script>
+    <script>scripts\scr_attack_state.gml</script>
     <scripts name="Movement_old">
       <script>scripts\scr_pcmove_init.gml</script>
       <script>scripts\scr_player_movement.gml</script>
@@ -27,9 +37,8 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_view</object>
     <objects name="Movement Testing Objects">
-      <object>objects\obj_pc_movetest</object>
+      <object>objects\obj_player_place</object>
       <object>objects\obj_move_debugger</object>
     </objects>
   </objects>
