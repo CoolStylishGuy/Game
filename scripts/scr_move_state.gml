@@ -1,10 +1,12 @@
 ///scr_move_state
 scr_get_input();
 
-if (attack_key) {
+if (punch1_key) {
     image_index = 0;
-    state = scr_attack_state;
+    state = scr_punch1_state;
 }
+
+combo_state = "move/stand";
 
 // Get direction
 dir = point_direction(0, 0, xaxis, yaxis);
