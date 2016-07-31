@@ -1,11 +1,15 @@
 ///scr_move_state
-image_index = 0;
 scr_get_input();
+if (dash_key) {
+    state = scr_dash_state;
+    alarm[0] = room_speed / 6;
+}
 
 if (attack_key) {
     image_index = 0;
     state = scr_attack_state;
 }
+
 
 // Get direction
 dir = point_direction(0, 0, xaxis, yaxis);
@@ -13,9 +17,6 @@ dir = point_direction(0, 0, xaxis, yaxis);
 // Get length
 if (xaxis == 0 && yaxis == 0) {
     len = 0;
-} else if (tiptoe_key) {
-    // Tiptoe is half speed
-    len = spd / 2;
 } else {
     len = spd;
 }
@@ -25,20 +26,24 @@ hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
 
 // Move
-x += hspd;
-y += vspd;
+phy_position_x += hspd;
+phy_position_y += vspd;
+
+// Control sprite
+image_speed = .2;
+if (len == 0) image_index = 0;
 
 // Vertical sprites
 if (vspd > 0) {
-    sprite_index = spr_down_place;
+    sprite_index = spr_player_down;
 } else if (vspd < 0) {
-    sprite_index = spr_up_place;
+    sprite_index = spr_player_up;
 }
 
 // Horizontal sprites
 if (hspd > 0) {
-    sprite_index = spr_right_place;
+    sprite_index = spr_player_right;
 } else if (hspd < 0) {
-    sprite_index = spr_left_place;
+    sprite_index = spr_player_left;
 }
 
