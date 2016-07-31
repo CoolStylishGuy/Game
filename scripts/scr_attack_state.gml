@@ -1,5 +1,5 @@
 ///scr_attack_state
-image_speed = .01;
+image_speed = .1;
 
 switch (sprite_index) {
     case spr_down_place:
