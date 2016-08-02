@@ -1,11 +1,12 @@
 ///scr_move_state
-image_index = 0;
 scr_get_input();
 
-if (attack_key) {
+if (punch1_key) {
     image_index = 0;
-    state = scr_attack_state;
+    state = scr_punch1_state;
 }
+
+combo_state = "move/stand";
 
 // Get direction
 dir = point_direction(0, 0, xaxis, yaxis);
@@ -27,6 +28,10 @@ vspd = lengthdir_y(len, dir);
 // Move
 x += hspd;
 y += vspd;
+
+// Control sprite
+image_speed = .2;
+if (len == 0) image_index = 0;
 
 // Vertical sprites
 if (vspd > 0) {

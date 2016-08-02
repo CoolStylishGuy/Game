@@ -11,10 +11,14 @@
       <sprite>sprites\spr_up_place</sprite>
       <sprite>sprites\spr_left_place</sprite>
       <sprite>sprites\spr_right_place</sprite>
-      <sprite>sprites\spr_down_attack_place</sprite>
-      <sprite>sprites\spr_up_attack_place</sprite>
-      <sprite>sprites\spr_left_attack_place</sprite>
-      <sprite>sprites\spr_right_attack_place</sprite>
+      <sprites name="Attack Place Holders">
+        <sprites name="Punch1">
+          <sprite>sprites\spr_down_attack_place</sprite>
+          <sprite>sprites\spr_up_attack_place</sprite>
+          <sprite>sprites\spr_left_attack_place</sprite>
+          <sprite>sprites\spr_right_attack_place</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Player Sprite Concepts">
       <sprite>sprites\spr_player_left</sprite>
@@ -26,7 +30,9 @@
   <scripts name="scripts">
     <script>scripts\scr_get_input.gml</script>
     <script>scripts\scr_move_state.gml</script>
-    <script>scripts\scr_attack_state.gml</script>
+    <script>scripts\scr_punch1_state.gml</script>
+    <script>scripts\scr_punch2_state.gml</script>
+    <script>scripts\scr_punch3_state.gml</script>
     <scripts name="Movement_old">
       <script>scripts\scr_pcmove_init.gml</script>
       <script>scripts\scr_player_movement.gml</script>

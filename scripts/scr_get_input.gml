@@ -5,7 +5,7 @@ left_key = keyboard_check(vk_left);
 up_key = keyboard_check(vk_up);
 down_key = keyboard_check(vk_down);
 tiptoe_key = keyboard_check(ord('S'));
-attack_key = keyboard_check_pressed(ord('A'));
+punch1_key = keyboard_check_pressed(ord('A'));
 
 // Get axis
 xaxis = (right_key - left_key);

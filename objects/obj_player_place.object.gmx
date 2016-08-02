@@ -34,6 +34,7 @@ xaxis = 0;
 yaxis = 0;
 dir = 0;
 image_index = 0;
+combo_state = "move/stand";
 
 scr_get_input();
 
@@ -85,7 +86,15 @@ script_execute(state);
           <argument>
             <kind>1</kind>
             <string>/// Change back to move state
-if (state == scr_attack_state) {
+if (state == scr_punch1_state) {
+    state = scr_move_state;
+}
+
+if (state == scr_punch2_state) {
+    state = scr_move_state;
+}
+
+if (state == scr_punch3_state) {
     state = scr_move_state;
 }
 </string>
